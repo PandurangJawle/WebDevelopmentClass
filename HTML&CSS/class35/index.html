@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+        /* .box:first-child{
+           
+
+        } */
+
+        /* .box:first-line{
+            color: rgb(28, 17, 175);
+        } */
+
+        /* .boxes *{
+            border: 2px solid black;
+            border-radius: 5px ;
+        }
+        p,a, .box,[data-color="primary"]{
+            margin-top:45px ;
+            padding: 30px;
+
+        }
+        .box:nth-child(3){
+            background-color: blue;
+
+        } */
+        .boxes::before{
+            content: "this is before ";
+            color: red;        }
+
+            .boxes::after{
+                content: "this is after ";
+                color: blueviolet;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div  data-color="primary" class="box">hey i am first box </div>
+      <div class="box">hey i am box</div>
+      <div class="box">hey i am box</div>
+    </div>
+  </body>
+</html>

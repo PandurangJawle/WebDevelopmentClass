@@ -1,0 +1,47 @@
+/* Resetting default margin and padding for elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling the header and navigation */
+  header {
+
+    background-color:aqua;
+  
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+   
+  }
+  
+  nav ul li a:hover {
+    background-color:rgb(255, 30, 0);
+  }
+   .icon img{
+    width: 80px;
+display: flex;
+    align-items: center;
+    
+
+  }
